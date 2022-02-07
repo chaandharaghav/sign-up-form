@@ -125,3 +125,27 @@ form h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+#sign-in a {
+  color: rgb(94, 90, 90);
+}
+
+form button {
+  padding: 0.8rem 2rem;
+  margin-bottom: 0.7rem;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 1.2rem;
+
+  color: var(--font-color);
+  background-color: hsl(19, 56%, 40%);
+}
+
+form button:active {
+  transform: scale(1.1);
+}
+
+form button:hover {
+  background-color: hsl(19, 56%, 30%);
+}
