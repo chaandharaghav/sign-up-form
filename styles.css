@@ -19,12 +19,16 @@ a:visited {
 
 body,
 #cover-section,
-#cover-overlay {
+#cover-overlay,
+#input-section,
+#input-section div {
   display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 #cover-section {
-  width: 35%;
+  min-width: 35%;
   height: 100vh;
 
   background: url('./assets/img/nathan-dumlao-zi5vRoAP3WY-unsplash.jpg');
@@ -32,7 +36,6 @@ body,
 
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 #cover-overlay {
@@ -46,7 +49,6 @@ body,
   top: 150px;
 
   justify-content: center;
-  align-items: center;
 }
 
 #cover-overlay img {
@@ -57,4 +59,40 @@ body,
   color: var(--font-color);
 
   justify-self: flex-end;
+}
+
+#main-section {
+  margin-left: 5rem;
+
+  padding-right: 200px;
+}
+
+#main-section p {
+  font-size: 30px;
+}
+
+#main-section p:first-of-type {
+  margin-bottom: 2rem;
+}
+
+#main-section p:last-of-type {
+  margin-bottom: 6rem;
+}
+
+form h2 {
+  margin-bottom: 2rem;
+}
+
+#input-section {
+  flex-flow: wrap;
+}
+
+#input-section div {
+  width: 40%;
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 1.8rem;
 }
