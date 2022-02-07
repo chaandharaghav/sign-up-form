@@ -2,6 +2,7 @@
   --font-color: #e9e9e9;
   --link-unvisited-color: antiquewhite;
   --link-visited-color: aliceblue;
+  --input-focus-border: rgb(100, 55, 24);
 }
 
 * {
@@ -25,6 +26,10 @@ body,
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+
+body {
+  background-color: rgb(250, 247, 242);
 }
 
 #cover-section {
@@ -68,7 +73,7 @@ body,
 }
 
 #main-section p {
-  font-size: 30px;
+  font-size: 27px;
 }
 
 #main-section p:first-of-type {
@@ -77,6 +82,24 @@ body,
 
 #main-section p:last-of-type {
   margin-bottom: 6rem;
+}
+
+input {
+  font-size: 1.1rem;
+  padding: 4px 5px;
+
+  border-radius: 5px;
+
+  outline: 1px solid grey;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--input-focus-border);
+
+  -webkit-box-shadow: 5px 5px 10px -6px #000000;
+  box-shadow: 5px 5px 10px -6px #000000;
 }
 
 form h2 {
@@ -95,4 +118,10 @@ form h2 {
   justify-content: space-between;
 
   margin-bottom: 1.8rem;
+}
+
+#input-section label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
